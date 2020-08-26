@@ -16,14 +16,7 @@ def assign_rooms(speakers)
 end
 end
 
-def printer(name)
-  name.map do |name|
-  "Hello, my name is #{name}."
-end
-end
-
-def printer(printer)
-printer.map do|printer|
-  "Hello, my name is #{printer}."
-end
+def printer(attendees)
+batch_badge_creator(attendees).each{|badge| puts badge}
+assign_rooms(attendees).each{|rooms| puts rooms}
 end
